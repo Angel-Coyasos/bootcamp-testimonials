@@ -1,0 +1,98 @@
+:root {
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter' ;
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.image-container {
+    position: relative;
+    width: 327px;
+    height: 308px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 24px auto 0;
+    background-image: url(./images/pattern-bg.svg);
+    background-size: contain;
+    & .image {
+        width: 80%;
+        border-radius: 4px;
+    } 
+}
+
+.arrows-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 60px;
+    box-shadow: 1px 1px 5px;
+    background-color: white;
+    & .arrow {
+        cursor: pointer;
+    }
+}
+
+.text-container {
+    position: relative;
+    padding-top: 37px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    & .quotes {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 60px;
+        margin: 0 auto;
+    }
+    & .user-testimonial {
+        width: 311px;
+        margin: 0 auto 19px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        color: var(--DarkBlue);
+    }
+    .user-details {
+        & .user-name, .user-degree {
+            font-size: .9375rem;
+            text-align: center;
+        }
+        & .user-name {
+            color: var(--DarkBlue);
+        }
+        & .user-degree {
+            color: var(--GrayishBlue);
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
