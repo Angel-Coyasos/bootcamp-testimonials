@@ -52,5 +52,5 @@ nextBtn.addEventListener( 'click', () => {
     }
     
     updateProfileInfo();
-    
+
 } );
